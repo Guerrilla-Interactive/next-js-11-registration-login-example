@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "firstName": "Frikk",
+        "lastName": "Jarl",
+        "username": "frikk",
+        "hash": "$2a$10$VpbxzyWVW4EbvEOHjWNB7OD8UfkxCHbmLXpUZPJC4WUZzdyTk67GW",
+        "id": 1,
+        "dateCreated": "2022-01-02T01:27:06.065Z",
+        "dateUpdated": "2022-01-02T01:27:06.065Z"
+    },
+    {
+        "firstName": "Donald",
+        "lastName": "Duck",
+        "username": "donald",
+        "hash": "$2a$10$YCQ5CtZj03gNWfIjeo/9YOgvTuMg.DjS8Utn0RhLo21siPnd/yi5y",
+        "id": 2,
+        "dateCreated": "2022-01-02T01:38:04.448Z",
+        "dateUpdated": "2022-01-02T01:38:04.448Z"
+    }
+]

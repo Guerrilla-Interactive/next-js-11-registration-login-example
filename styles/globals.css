@@ -1,5 +1,158 @@
-a { cursor: pointer; }
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap");
+
+a {
+  cursor: pointer;
+}
 
 .app-container {
-    min-height: 350px;
+  min-height: 350px;
+}
+
+* {
+  color: white;
+  border-color: white;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+
+pre {
+  color: #aaa;
+}
+
+code div > div:nth-child(odd) {
+  color: #ffffff80 !important;
+}
+
+code:hover div > div:nth-child(odd) {
+  color: #ff3600 !important;
+}
+
+.x-container {
+  max-width: 95vw;
+  width: 95vw;
+  margin: auto;
+}
+
+code {
+  min-height: 40rem;
+  align-items: start;
+  align-content: start;
+  background: #00000020;
+  padding: 2vw;
+  border-radius: 2rem;
+}
+
+.queryZone {
+  background: #00000015;
+  margin-right: -2.5vw;
+  padding: 2vw;
+}
+
+code * {
+  align-items: start;
+  align-self: start;
+  align-content: start;
+}
+
+.code-columns {
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  width: fit-content;
+}
+
+.page-title {
+  margin-bottom: 3rem;
+}
+
+.page-title svg {
+  margin-top: -0.25rem;
+  margin-right: 0.8rem;
+}
+
+.__json-pretty__ {
+  border-radius: 2rem;
+
+  justify-self: end;
+  color: #999 !important;
+  opacity: 0.75;
+}
+
+.__json-pretty__:hover {
+  opacity: 1;
+}
+
+.areaGrid {
+  display: grid;
+  max-width: 95vw;
+  width: 95vw;
+  grid-template-columns: 2fr 1fr;
+}
+
+.areaGrid > div:first-child {
+  margin-top: 8rem;
+}
+
+.__json-key__ {
+  color: #ffffff80 !important;
+}
+
+.__json-pretty__:hover .__json-key__ {
+  color: #ff3600 !important;
+}
+
+.navbar {
+  border-bottom: solid #ffffff20 1px;
+  border-right: solid #ffffff20 1px;
+  border-radius: 0 0 1rem 0;
+  transition: 300ms;
+  position: absolute;
+}
+
+.navbar:hover {
+  border-bottom: solid #ffffff80 1px;
+  border-right: solid #ffffff80 1px;
+}
+
+.exportDefault {
+  color: lightblue;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.st0 {
+  fill: #ffffff;
+}
+.st1 {
+  fill: #ff3600;
+}
+
+.logo {
+  width: 150px;
+  margin-right: 2rem;
+  margin-left: 1.5rem;
+}
+
+.nav-item {
+  margin-right: 0.5rem;
+}
+
+.whatQuery {
+  opacity: 0.8;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 1rem;
+  border: 1px solid #ffffff1f;
+}
+
+.whatQuery:hover {
+  opacity: 1;
+}
+
+.app-container {
+  background: #222;
+  min-height: 100vh;
 }

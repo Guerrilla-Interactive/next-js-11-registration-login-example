@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { NavLink } from '.';
 import { userService } from 'services';
+import Logo from './logo';
 
 export { Nav };
 
@@ -21,11 +22,15 @@ function Nav() {
     if (!user) return null;
     
     return (
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <nav className="navbar navbar-expand navbar-dark">
             <div className="navbar-nav">
-                <NavLink href="/" exact className="nav-item nav-link">Home</NavLink>
-                <NavLink href="/users" className="nav-item nav-link">Users</NavLink>
-                <a onClick={logout} className="nav-item nav-link">Logout</a>
+                <Logo />
+                {/* <NavLink href="/" exact className="nav-item nav-link">Home</NavLink>
+                <NavLink href="/users" className="nav-item nav-link">Users</NavLink> */}
+                <NavLink href="/sanity" className="nav-item nav-link">Elements</NavLink>
+                <NavLink href="/sections" className="nav-item nav-link">Sections</NavLink>
+                <NavLink href="/components" className="nav-item nav-link">Components</NavLink>
+                {/* <a onClick={logout} className="nav-item nav-link">Logout</a> */}
             </div>
         </nav>
     );
