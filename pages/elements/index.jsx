@@ -5,23 +5,22 @@ import {GetSchemas, QueryZone } from 'components/nextgen/schema-related';
 
 
 
-function Sections({elements, sections, components}) {
+function Elements({elements, sections, components}) {
     return (
             <div className="x-container">
                 <div className="areaGrid"> 
                     <div> 
                         <h3 className="page-title">
                             <Selection />
-                            <span  className="actual-title">Sections</span>
+                            <span  className="actual-title">Elements</span>
                         </h3>
-                        <GetSchemas schemas={sections} />
+                        <GetSchemas schemas={elements} />
                     </div>
-                    <QueryZone title="xSectionGenerator" query={sections} />
+                    <QueryZone title="xElementsGenerator" query={elements} />
                  </div>   
            </div>
     );
 }
-
 
 export async function getStaticProps() {
     const components = await getClient(true).fetch(groq`*[_type == "xComponentGenerator"]`);
@@ -40,4 +39,4 @@ export async function getStaticProps() {
   }
 
 
-export default Sections;
+export default Elements;

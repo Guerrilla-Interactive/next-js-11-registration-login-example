@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { NavLink } from '.';
 import { userService } from 'services';
-import Logo from './logo';
+import Logo from './Logo';
 
 export { Nav };
 
@@ -27,10 +27,10 @@ function Nav() {
                 <Logo />
                 {/* <NavLink href="/" exact className="nav-item nav-link">Home</NavLink>
                 <NavLink href="/users" className="nav-item nav-link">Users</NavLink> */}
-                <NavLink href="/sanity" className="nav-item nav-link">Elements</NavLink>
+                <NavLink href="/elements" className="nav-item nav-link">Elements</NavLink>
                 <NavLink href="/sections" className="nav-item nav-link">Sections</NavLink>
                 <NavLink href="/components" className="nav-item nav-link">Components</NavLink>
-                {/* <a onClick={logout} className="nav-item nav-link">Logout</a> */}
+                <a onClick={logout} className="nav-item nav-link">Logout</a>
             </div>
         </nav>
     );
