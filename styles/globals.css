@@ -21,14 +21,6 @@ pre {
   color: #aaa;
 }
 
-code div > div:nth-child(odd) {
-  color: #ffffff80 !important;
-}
-
-code:hover div > div:nth-child(odd) {
-  color: #ff3600 !important;
-}
-
 .x-container {
   max-width: 95vw;
   width: 95vw;
@@ -182,4 +174,37 @@ code * {
 
 a,
 a:hover {
+}
+
+.elementItem {
+  display: grid;
+  text-align: left;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.itemType {
+  min-width: 4rem;
+}
+
+.itemResult {
+  width: 15rem;
+}
+
+.elementFields {
+  display: grid;
+  text-align: left;
+  grid-auto-flow: row;
+}
+
+.fieldIndent {
+  margin-left: 1rem;
+}
+
+code .itemType {
+  color: #ffffff80;
+}
+
+code:hover .itemType {
+  color: #ff3600 !important;
 }
